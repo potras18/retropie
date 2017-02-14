@@ -122,10 +122,10 @@ function _add_rom_emulationstation() {
 
 function depends_emulationstation() {
     local depends=(
-        libboost-locale-dev libboost-system-dev libboost-filesystem-dev
-        libboost-date-time-dev libfreeimage-dev libfreetype6-dev libeigen3-dev
-        libcurl4-openssl-dev libasound2-dev cmake libsdl2-dev libsm-dev
-        libvlc-dev libvlccore-dev vlc-nox
+		libsdl2-dev libsdl2-mixer-dev libboost-system-dev libboost-filesystem-dev libboost-date-time-dev 
+		libboost-locale-dev libboost-regex-dev libboost-thread-dev libfreeimage-dev libfreetype6-dev 
+		libeigen3-dev libcurl4-openssl-dev libasound2-dev libgl1-mesa-dev build-essential cmake 
+		fonts-droid libsm-dev libvlc-dev libvlccore-dev vlc-nox
     )
 
     isPlatform "x11" && depends+=(gnome-terminal)
